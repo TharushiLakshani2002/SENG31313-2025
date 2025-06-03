@@ -408,57 +408,65 @@ nav .nav-list li.btn:hover a{
     z-index: 2;
 }
 
-.projects{
+.projects {
     background-color: rgb(17, 17, 17);
-    padding-bottom: 50px;
+    padding: 30px 20px 50px;
 }
 
-.projects h2{
-    padding-top: 30px;
+.projects h2 {
     text-align: center;
     color: #ddd;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.project-content{
+.project-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    align-items: center;
-    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    padding: 0 10px;
 }
 
-.project-row{
-    padding: 25px;
-    margin: 10px;
-    height: 100%;
-    background:#202020;
+.project-row {
+    background: #202020;
+    border: 2px solid #4b41d2;
     border-radius: 0.5rem;
-    transition: all .40s ease;
-    object-fit: cover;
-    border:2px solid #4b41d2;
+    padding: 20px;
+    transition: all 0.4s ease;
+    text-align: center;
+     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.project-row:hover{
-    transform: scale(1.01) translateY(-5px);
+.project-row:hover {
+    transform: scale(1.03) translateY(-8px);
     cursor: pointer;
+    box-shadow: 0 8px 20px rgba(75, 65, 210, 0.3);
 }
 
+.project-row img {
+    width: 100%;
+    height: 180px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.project-row h6 {
+    color: #4b41d2;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
 
 .project-row h3 {
-    color:#ddd;
+    color: #ddd;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
-.project-row h6{
-    color: #4b41d2;
-}
-
-.project-row img{
-    
-    width: 90%;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-}
 
 .contact {
     padding: 20px 50px ;
